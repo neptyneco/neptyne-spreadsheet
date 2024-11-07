@@ -1,29 +1,55 @@
 aiocontextvars
 alembic
+altair
 anthropic
 appnope
+bahttext
 beautifulsoup4
 black
+bokeh
+calweek
 contextvars
+croniter
+db-dtypes
+descartes
+fastavro
+feedparser # ** data.py
 fire
+folium # ** geo.py
 gcloud-aio-storage
-geopandas
+geodatasets # ** geo.py
+geopandas # ** geo.py
+geopy
 google-api-python-client
 google-auth-httplib2
 google-cloud-aiplatform
+google-cloud-bigquery # ** data.py
+google-cloud-bigquery-storage # ** data.py
+google-generativeai
+graphlib
 gspread
 gspread_asyncio
 gspread_formatting
 html2text
+html5lib
 httpx
+iexfinance # ** data.py
 ipykernel~=6.13.0
 ipython~=8.3.0
 isort
+isoweek
+jaconv
+json-fix
 jupyter_client
 kaleido
 kubernetes_asyncio
 libcst
+lxml # ** web.py
 lxml_html_clean
+mapboxgl
+mapclassify
+markdown
+matplotlib
 MonkeyType
 mypy
 nbformat
@@ -55,17 +81,26 @@ pytest-snapshot
 pytest-timeout
 python-dateutil
 python-dotenv
+pyxirr
+pyxirr>=0.10.5
+qrcode
 readability-lxml
 requests
+roman
 ruff
 scikit-learn
+scipy
+seaborn
 stack-data
+statsmodels
 streamlit
+streamlit>=1.36.0
 tabulate
 tiktoken
 tokenize_rt
 tornado
 tornado-sqlalchemy
+tweepy
 types-croniter
 types-Markdown
 types-paramiko

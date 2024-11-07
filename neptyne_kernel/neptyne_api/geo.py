@@ -2,7 +2,6 @@ from functools import partial, wraps
 from typing import Any, Callable
 
 import geopandas
-import geoplot
 import numpy as np
 import pyproj
 from folium import GeoJson
@@ -86,6 +85,8 @@ def dataset(name_or_url: str) -> GeoDataFrame:
     """Returns a sample dataset given a name or url.
 
     Named datasets are taken from geopandas.datasets, geoplot.datasets and geodatasets.
+    geoplot is not by default installed, so you need to set it up if you want to depend
+    on that.
 
     Example:
         =geo.dataset("naturalearth_lowres")
@@ -97,6 +98,7 @@ def dataset(name_or_url: str) -> GeoDataFrame:
         if name_or_url in geopandas.datasets.available:
             path = geopandas.datasets.get_path(name_or_url)
         else:
+            import geoplot
             try:
                 path = geoplot.datasets.get_path(name_or_url)
             except ValueError:

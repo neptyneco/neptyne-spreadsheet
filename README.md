@@ -8,7 +8,7 @@ The easiest way to get started is to use the docker image. This will give you a 
 
 ```shell
 
-docker-compose up --build
+docker-compose up -d
 
 ```
 
@@ -39,7 +39,7 @@ pip install -r requirements.txt
 After which you can start neptyne with:
     
 ```shell
-python server/application.py
+PYTHONPATH=. python server/application.py
 ```
 
 ## Using Neptyne with Google Sheets

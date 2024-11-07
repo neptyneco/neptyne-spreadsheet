@@ -1,14 +1,11 @@
 version: '3.8'
 
 services:
-  app:
-    build:
-      context: .
-      dockerfile: Dockerfile
+  neptyne:
+    image: neptyne/neptyne:latest
     ports:
       - "8877:8877"
     volumes:
       - ./db:/db
     command: ["python", "server/application.py", "--sqlite-db", "/db/sqlite.db"]
-  neptyne:
-    image: neptyne/neptyne:latest
+

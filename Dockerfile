@@ -16,6 +16,7 @@ ENV VIRTUAL_ENV=/opt/venv
 COPY requirements.txt ./
 RUN /root/.cargo/bin/uv venv ${VIRTUAL_ENV}
 RUN /root/.cargo/bin/uv pip install --no-cache -r requirements.txt
+RUN /root/.cargo/bin/uv pip uninstall -y json-fix || true
 
 FROM node:16 AS frontend
 WORKDIR /app

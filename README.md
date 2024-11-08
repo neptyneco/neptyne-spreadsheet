@@ -8,7 +8,7 @@ The easiest way to get started is to use the docker image. This will give you a 
 
 ```shell
 
-docker-compose up -d
+docker compose up -d
 
 ```
 

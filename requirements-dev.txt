@@ -441,8 +441,6 @@ joblib==1.3.2
     #   -r requirements.txt
     #   contextily
     #   scikit-learn
-json-fix==0.3.0
-    # via -r neptyne_kernel/requirements-extras.in
 jsonschema==4.5.1
     # via
     #   -r requirements.txt

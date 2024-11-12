@@ -21,6 +21,9 @@ def json_default(obj: Any) -> str | int | list | float | None:
     except ImportError:
         from jupyter_client.jsonutil import date_default as jupyter_json_default
 
+    if hasattr(obj, "__json__"):
+        obj = obj.__json__()
+
     return jupyter_json_default(obj)
 
 

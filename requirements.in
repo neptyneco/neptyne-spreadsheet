@@ -39,7 +39,6 @@ ipython~=8.3.0
 isort
 isoweek
 jaconv
-json-fix
 jupyter_client
 kaleido
 kubernetes_asyncio
